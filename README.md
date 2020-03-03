@@ -6,6 +6,16 @@ At the end of this workshop, you will be able to build this:
 ![home page](/home-page.png)
 ![about page](/about-page.png)
 
+---
+
+## Setup
+To download the code from this repo:
+```bash
+git clone https://github.com/jialin-wu-02/menlo-webdev.git
+```
+
+---
+
 ## HTML
 HTML is the skeleton of any website. It is a kind of declarative languages that allows a website to display titles, paragraphs, image, and more on a browser. It is very easy to learn and simple to use. Let's see a basic example:
 
@@ -32,6 +42,33 @@ There are several other tags that would be extremely useful and common in web de
 Feel free to play around with the tags above. You can also explore the rest of the tags here:
 [HTML Element Reference](https://www.w3schools.com/TAGS/default.ASP). 
 
+---
+
+Now let us look at a more complicated HTML example: `index.html` file located in the `source_html` folder. 
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Macintosh </title>
+</head>
+<body>
+    <h1> Macintosh </h1>
+    <img src="image/macintosh-white-bg.jpg" alt="A picture of Macintosh" width="700px">
+    <a href="about.html"> Learn More </a>
+    <a href="#"> Purchase </a>
+</body>
+</html>
+```
+
+This is the first step of building our macintosh website: writing out HTML code. Let us walk through these HTML line by line.
+
+1. `<!DOCTYPE html>` is not a HTML tag! It is an instruction to tell the browser 
+2. `<html lang="en">` is the same html tag that we just introduced before, with a little addition of the language attribue that specify that most of the text in this website is going to be english. 
+3. `<head>` tag is used to include meta data inside an html page. Things like title, link to the styling of the website, link to the javascript of the website and more can be included in the head tag. Here we have included the title of the website, Macintosh using the `<title>` tag.
+4. `<body>`, `<h1>` we have already talked about these two tags before. To reiterate, the `<body>` tag is used to specify the actual content of the website, and the `<h1>` is used to specify the "most important" or level one title.
+5. `<img>`: This is an image tag. It allows us to include image in a website. To include the image, you need the `src` attribute to point to the address where you picture is stored. The `alt` attribute will be shown if the picture is having trouble loading on the website. The `width` attribute specify the width of the picture. Here, we let `width="700px"`, which means to let the width of the picture to be 700 pixels. We will learn more about width and `px` in the CSS part of this workshop.
+6. `<a>`: This is the link tag. It will create a link that allows the user to click and being redirected to another page. The address of the page that the user would be redirected to is included in the `href` attribue of the tag. `<a href="about.html">` will redirect the user to the about.html page that is in the same folder as the index.html file; while `<a href="#">` will not redirect the user to any other pages. Instead, it will redirect the user back to the page that the user is currently at. Essentially, what it is doing is just "refreshing" the page. 
 
 ## CSS
 
