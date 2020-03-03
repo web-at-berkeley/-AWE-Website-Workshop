@@ -1,18 +1,34 @@
 # Web development Workshop for Menlo Hacks
 
-Welcome Hackers. We will be going over the basics of HTML, CSS, and JS. Three of the most essential building blocks of web development. We will also include a introduction to [Bootstrap](https://getbootstrap.com/), a popular and super-easy-to-use UI framework as a bonus. 
+Welcome Hackers. This is the web development workshop for Menlo Hacks. 
 
-At the end of this workshop, you will be able to build this:
+The workshop is divded into three parts: 
+1. The basic of web development: HTML
+2. Make your website beautiful and functional: CSS & JS
+3. Leverage the power of open source library: [Bootstrap](https://getbootstrap.com/)
+
+We will be writing and altering code for each part of the workshop! Therefore, I have included three folders containing the codes that we will cover for each part.
+
+At the end of this workshop, you will be able to build this (screenshots below), and understand the how and the why behind web development.
+
 ![home page](/home-page.png)
 ![about page](/about-page.png)
 
 ---
-
 ## Setup
-To download the code from this repo:
+If you haven't download `git`, download it here! Git is a powerful tool to control and manage your code.
+
+Download Git: https://git-scm.com/downloads
+
+After downloading git, you can clone the code from this repo by doing this in your terminal:
+
 ```bash
 git clone https://github.com/jialin-wu-02/menlo-webdev.git
 ```
+
+This will create a folder called `menlo-webdev` in your current folder. All the code that we need will be cloned by git and added into the `menlo-webdev` folder. 
+
+Now, let us dive right into the world of web development!
 
 ---
 
@@ -70,7 +86,13 @@ This is the first step of building our macintosh website: writing out HTML code.
 5. `<img>`: This is an image tag. It allows us to include image in a website. To include the image, you need the `src` attribute to point to the address where you picture is stored. The `alt` attribute will be shown if the picture is having trouble loading on the website. The `width` attribute specify the width of the picture. Here, we let `width="700px"`, which means to let the width of the picture to be 700 pixels. We will learn more about width and `px` in the CSS part of this workshop.
 6. `<a>`: This is the link tag. It will create a link that allows the user to click and being redirected to another page. The address of the page that the user would be redirected to is included in the `href` attribue of the tag. `<a href="about.html">` will redirect the user to the about.html page that is in the same folder as the index.html file; while `<a href="#">` will not redirect the user to any other pages. Instead, it will redirect the user back to the page that the user is currently at. Essentially, what it is doing is just "refreshing" the page. 
 
+Now we have covered the essentials of the HTML! Open the `about.html` file in the `source_html` folder. Try to understand line by line what does the HTML code in the `about.html` file do!
+
+---
+
 ## CSS
+
+
 
 ## JS
 
