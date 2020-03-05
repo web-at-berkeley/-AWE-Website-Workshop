@@ -14,7 +14,6 @@ At the end of this workshop, you will be able to build this (screenshots below),
 ![home page](/home-page.png)
 ![about page](/about-page.png)
 
----
 ## Setup
 If you haven't download `git`, download it here! Git is a powerful tool to control and manage your code.
 
@@ -30,9 +29,7 @@ This will create a folder called `menlo-webdev` in your current folder. All the 
 
 Now, let us dive right into the world of web development!
 
----
-
-## HTML
+## Part One - HTML
 HTML is the skeleton of any website. It is a kind of declarative languages that allows a website to display titles, paragraphs, image, and more on a browser. It is very easy to learn and simple to use. Let's see a basic example:
 
 ```HTML
@@ -60,7 +57,7 @@ Feel free to play around with the tags above. You can also explore the rest of t
 
 ---
 
-Now let us look at a more complicated HTML example: `index.html` file located in the `source_html` folder. 
+Now let us look at a more complicated HTML example: `index.html` file located in the `part-one-html` folder. 
 
 ```HTML
 <!DOCTYPE html>
@@ -86,20 +83,115 @@ This is the first step of building our macintosh website: writing out HTML code.
 5. `<img>`: This is an image tag. It allows us to include image in a website. To include the image, you need the `src` attribute to point to the address where you picture is stored. The `alt` attribute will be shown if the picture is having trouble loading on the website. The `width` attribute specify the width of the picture. Here, we let `width="700px"`, which means to let the width of the picture to be 700 pixels. We will learn more about width and `px` in the CSS part of this workshop.
 6. `<a>`: This is the link tag. It will create a link that allows the user to click and being redirected to another page. The address of the page that the user would be redirected to is included in the `href` attribue of the tag. `<a href="about.html">` will redirect the user to the about.html page that is in the same folder as the index.html file; while `<a href="#">` will not redirect the user to any other pages. Instead, it will redirect the user back to the page that the user is currently at. Essentially, what it is doing is just "refreshing" the page. 
 
-Now we have covered the essentials of the HTML! Open the `about.html` file in the `source_html` folder. Try to understand line by line what does the HTML code in the `about.html` file do!
+Now we have covered the essentials of the HTML! Open the `about.html` file in the `part-one-html` folder. Try to understand line by line what does the HTML code in the `about.html` file do!
 
----
+## Part Two - CSS & JS
+### CSS
+Now that we have covered the basic of HTML, it is time to give our website some stylings! Introducing CSS, a language that adds styles to your document.
 
-## CSS
+Let's look at a basic example of css:
+
+```CSS
+a {
+    color: red;
+    background-color: black;
+    font-size: 30px;
+}
+```
+
+There are two parts to a full CSS syntax:
+1. Selector
+2. Declaration
+
+Selector is used to select one particular element in the website. Here, in this example, the selector is the `a`, which means that the styles in the bracket would apply to every `a` element, aka the links, in the website. 
+
+Declaration is what is inside the brackets. There are two parts to a declaration, a property, followed by a value. For instance, if you want to specify the color of the text to red, you use `color` property, and assign `red` to its value, giving us `color: red`. 
+
+In this example, it means that it will select every link in the website and let their text color to be red, background color to be black, and the size of the font to be `30px`.
+
+I know it is intimdating to see so many different properties at once, but as you write more and more CSS, you will become more familar with these properties. For now, you can use our good friend Google to find the property that you need.
+
+Before moving on to work on a real example, I want to talk more about CSS selectors. It turns out that CSS selector is very powerful, it can select more than a specifc type of element on a website:
+
+Every HTML element has a class attribute. For example, you can give a `<p>` element a class called `important` by using:
+
+```
+<p>
+    Some not important text.
+</p>
+<p class="important">
+    Some important text. 
+</p>
+```
+To select a particular class, simply add a dot (`.`), in front of the name of the class. Here, we want to select the class important, and therefore, we can use the selector `.important`, and then you are able to select all the elements that have the class `important`. 
+
+Now, let us move on to a real life example.
+
+You can find all the css files that you need in the `part-two-css-js` folder. 
+
+Let us now take a look at the `style.css` file:
+
+
+```CSS
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.center-box {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1, h2, p, a {
+    font-family: 'Helvetica';
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+}
+
+a:hover {
+    color: green;
+}
+
+.cover-image {
+    width: 100vw;
+}
+```
 
 
 
-## JS
+### JS
 
-## Bootstrap
+
+## Part Three - Bootstrap
 
 ## Resources
 
 Learn more about Bootstrap: [Bootstrap](https://getbootstrap.com/)
 
-Free high resolution photos: [Unsplash](https://unsplash.com/)
+Find free high resolution photos: [Unsplash](https://unsplash.com/)
+
+Publish your website using Github Page: [Github Page](https://pages.github.com/)
