@@ -20,10 +20,10 @@ Download Git: https://git-scm.com/downloads
 After downloading git, you can clone the code from this repo by doing this in your terminal:
 
 ```bash
-git clone https://github.com/jialin-wu-02/menlo-webdev.git
+git clone https://github.com/web-at-berkeley/-AWE-Website-Workshop.git
 ```
 
-This will create a folder called `menlo-webdev` in your current folder. All the code that we need will be cloned by git and added into the `menlo-webdev` folder. 
+This will create a folder called `awe-website` in your current folder. All the code that we need will be cloned by git and added into the `awe-website` folder. 
 
 Now, let us dive right into the world of web development!
 
