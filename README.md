@@ -1,8 +1,6 @@
-# Web development Workshop for Menlo Hacks
+# Web development Workshop for AWE
 
-Welcome Hackers. This is the web development workshop for Menlo Hacks. 
-
-The workshop is divded into three parts: 
+Welcome! The workshop is divded into three parts: 
 1. The basic of web development: HTML
 2. Make your website beautiful and functional: CSS & JS
 3. Leverage the power of open source library: [Bootstrap](https://getbootstrap.com/)
@@ -180,13 +178,6 @@ a:hover {
     width: 100vw;
 }
 ```
-
-
-
-### JS
-
-
-## Part Three - Bootstrap
 
 ## Resources
 
