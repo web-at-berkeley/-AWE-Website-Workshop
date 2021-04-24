@@ -23,7 +23,7 @@ After downloading git, you can clone the code from this repo by doing this in yo
 git clone https://github.com/web-at-berkeley/WDB-Web-Dev-Intro-Workshop.git
 ```
 
-This will create a folder called `awe-website` in your current folder. All the code that we need will be cloned by git and added into the `awe-website` folder. 
+This will create a folder called `WDB-Web-Dev-Intro-Workshop` in your current folder. All the code that we need will be cloned by git and added into that folder. 
 
 Now, let us dive right into the world of web development!
 
