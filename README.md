@@ -1,4 +1,4 @@
-# Web development Workshop for AWE
+# Web development Workshop
 
 Welcome! The workshop is divded into three parts: 
 1. The basic of web development: HTML
